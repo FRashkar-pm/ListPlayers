@@ -14,7 +14,6 @@ use JaxkDev\DiscordBot\Plugin\Api;
 use JaxkDev\DiscordBot\Plugin\Main;
 use pocketmine\event\Listener;
 use pocketmine\player\Player;
-use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 use pocketmine\Server;
@@ -27,7 +26,7 @@ class ListPlayers extends PluginBase implements Listener{
     }
     public function onSendMsg(MessageSent $event){
         $discordbot = Server::getInstance()->getPluginManager()->getPlugin("DiscordBot");
-        $api = $discordbot->getApi();
+        $api = $this->discordbot->getApi();
         $message = $event->getMessage();
         $content = $message->getContent();
         $channel_id = $message->getChannelId();
