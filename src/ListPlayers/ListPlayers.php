@@ -13,7 +13,11 @@ use JaxkDev\DiscordBot\Plugin\Events\MessageSent;
 use JaxkDev\DiscordBot\Plugin\Api;
 use JaxkDev\DiscordBot\Plugin\Main;
 use pocketmine\event\Listener;
+use pocketmine\player\Player;
+use pocketmine\plugin\Plugin;
+use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
+use pocketmine\Server;
 
 class ListPlayers extends PluginBase implements Listener{
   
