@@ -1,0 +1,7 @@
+name: ListPlayers
+main: ListPlayers\ListPlayers
+author: AEDXDEV
+depend: DiscordBot
+version: 1.0
+api: 4.0.0
+description: show count players and name players
